@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Hello, world!</title>
+    <script>
+        let a;
+        let date;
+        let time;
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        setInterval(() => {
+            a = new Date();
+            date = a.toLocaleDateString(undefined, options);
+            time = a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
+            document.getElementById('time').innerHTML = time + " <br>on " + date;
+        },1000)
+    </script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-success">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">The Clock</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Countries
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Afghanistan</a></li>
+                  <li><a class="dropdown-item" href="#">Albania</a></li>
+                  <li><a class="dropdown-item" href="#">Algeria</a></li>
+                  <li><a class="dropdown-item" href="#">Andorra</a></li>
+                  <li><a class="dropdown-item" href="#">Angola</a></li>
+                  <li><a class="dropdown-item" href="#">Antigua and Barbuda</a></li>
+                  <li><a class="dropdown-item" href="#">Argentina</a></li>
+                  <li><a class="dropdown-item" href="#">Armenia</a></li>
+                  <li><a class="dropdown-item" href="#">Australia</a></li>
+                  <li><a class="dropdown-item" href="#">Austria</a></li>
+                  <li><a class="dropdown-item" href="#">Azerbaijan</a></li>
+                  <li><a class="dropdown-item" href="#">Bahamas</a></li>
+                  <li><a class="dropdown-item" href="#">Bahrain</a></li>
+                  <li><a class="dropdown-item" href="#">Bangladesh</a></li>
+                  <li><a class="dropdown-item" href="#">Barbados</a></li>
+                  <li><a class="dropdown-item" href="#">Belarus</a></li>
+                  <li><a class="dropdown-item" href="#">Belgium</a></li>
+                  <li><a class="dropdown-item" href="#">Belize</a></li>
+                  <li><a class="dropdown-item" href="#">Benin</a></li>
+                  <li><a class="dropdown-item" href="#">Bhutan</a></li>
+                  <li><a class="dropdown-item" href="#">Bolivia</a></li>
+                  <li><a class="dropdown-item" href="#">Bosnia and Herzegovina</a></li>
+                  <li><a class="dropdown-item" href="#">Botswana</a></li>
+                  <li><a class="dropdown-item" href="#">Brazil</a></li>
+                  <li><a class="dropdown-item" href="#">Brunei</a></li>
+                  <li><a class="dropdown-item" href="#">Bulgaria</a></li>
+                  <li><a class="dropdown-item" href="#">Burkina Faso</a></li>
+                  <li><a class="dropdown-item" href="#">Burundi</a></li>
+                  <li><a class="dropdown-item" href="#">Cabo Verde</a></li>
+                  <li><a class="dropdown-item" href="#">Cambodia</a></li>
+                  <li><a class="dropdown-item" href="#">Cameroon</a></li>
+                  <li><a class="dropdown-item" href="#">Canada</a></li>
+                  <li><a class="dropdown-item" href="#">Central African Republic</a></li>
+                  <li><a class="dropdown-item" href="#">Chad</a></li>
+                  <li><a class="dropdown-item" href="#">Chile</a></li>
+                  <li><a class="dropdown-item" href="#">China</a></li>
+                  <li><a class="dropdown-item" href="#">Colombia</a></li>
+                  <li><a class="dropdown-item" href="#">Comoros</a></li>
+                  <li><a class="dropdown-item" href="#">Congo</a></li>
+                  <li><a class="dropdown-item" href="#">Costa Rica</a></li>
+                  <li><a class="dropdown-item" href="#">Croatia</a></li>
+                  <li><a class="dropdown-item" href="#">Cuba</a></li>
+                  <li><a class="dropdown-item" href="#">Cyprus</a></li>
+                  <li><a class="dropdown-item" href="#">Czech Republic (Czechia)</a></li>
+                  <li><a class="dropdown-item" href="#">Côte d'Ivoire</a></li>
+                  <li><a class="dropdown-item" href="#">Denmark</a></li>
+                  <li><a class="dropdown-item" href="#">Djibouti</a></li>
+                  <li><a class="dropdown-item" href="#">Dominica</a></li>
+                  <li><a class="dropdown-item" href="#">Dominican Republic</a></li>
+                  <li><a class="dropdown-item" href="#">DR Congo</a></li>
+                  <li><a class="dropdown-item" href="#">Ecuador</a></li>
+                  <li><a class="dropdown-item" href="#">Egypt</a></li>
+                  <li><a class="dropdown-item" href="#">El Salvador</a></li>
+                  <li><a class="dropdown-item" href="#">Equatorial Guinea</a></li>
+                  <li><a class="dropdown-item" href="#">Eritrea</a></li>
+                  <li><a class="dropdown-item" href="#">Estonia</a></li>
+                  <li><a class="dropdown-item" href="#">Eswatini</a></li>
+                  <li><a class="dropdown-item" href="#">Ethiopia</a></li>
+                  <li><a class="dropdown-item" href="#">Fiji</a></li>
+                  <li><a class="dropdown-item" href="#">Finland</a></li>
+                  <li><a class="dropdown-item" href="#">France</a></li>
+                  <li><a class="dropdown-item" href="#">Gabon</a></li>
+                  <li><a class="dropdown-item" href="#">Gambia</a></li>
+                  <li><a class="dropdown-item" href="#">Georgia</a></li>
+                  <li><a class="dropdown-item" href="#">Germany</a></li>
+                  <li><a class="dropdown-item" href="#">Ghana</a></li>
+                  <li><a class="dropdown-item" href="#">Greece</a></li>
+                  <li><a class="dropdown-item" href="#">Grenada</a></li>
+                  <li><a class="dropdown-item" href="#">Guatemala</a></li>
+                  <li><a class="dropdown-item" href="#">Guinea</a></li>
+                  <li><a class="dropdown-item" href="#">Guinea-Bissau</a></li>
+                  <li><a class="dropdown-item" href="#">Guyana</a></li>
+                  <li><a class="dropdown-item" href="#">Haiti</a></li>
+                  <li><a class="dropdown-item" href="#">Holy See</a></li>
+                  <li><a class="dropdown-item" href="#">Honduras</a></li>
+                  <li><a class="dropdown-item" href="#">Hungary</a></li>
+                  <li><a class="dropdown-item" href="#">Iceland</a></li>
+                  <li><a class="dropdown-item" href="#">India</a></li>
+                  <li><a class="dropdown-item" href="#">Indonesia</a></li>
+                  <li><a class="dropdown-item" href="#">Iran</a></li>
+                  <li><a class="dropdown-item" href="#">Iraq</a></li>
+                  <li><a class="dropdown-item" href="#">Ireland</a></li>
+                  <li><a class="dropdown-item" href="#">Israel</a></li>
+                  <li><a class="dropdown-item" href="#">Italy</a></li>
+                  <li><a class="dropdown-item" href="#">Jamaica</a></li>
+                  <li><a class="dropdown-item" href="#">Japan</a></li>
+                  <li><a class="dropdown-item" href="#">Jordan</a></li>
+                  <li><a class="dropdown-item" href="#">Kazakhstan</a></li>
+                  <li><a class="dropdown-item" href="#">Kenya</a></li>
+                  <li><a class="dropdown-item" href="#">Kiribati</a></li>
+                  <li><a class="dropdown-item" href="#">Kuwait</a></li>
+                  <li><a class="dropdown-item" href="#">Kyrgyzstan</a></li>
+                  <li><a class="dropdown-item" href="#">Laos</a></li>
+                  <li><a class="dropdown-item" href="#">Latvia</a></li>
+                  <li><a class="dropdown-item" href="#">Lebanon</a></li>
+                  <li><a class="dropdown-item" href="#">Lesotho</a></li>
+                  <li><a class="dropdown-item" href="#">Liberia</a></li>
+                  <li><a class="dropdown-item" href="#">Libya</a></li>
+                  <li><a class="dropdown-item" href="#">Liechtenstein</a></li>
+                  <li><a class="dropdown-item" href="#">Lithuania</a></li>
+                  <li><a class="dropdown-item" href="#">Luxembourg</a></li>
+                  <li><a class="dropdown-item" href="#">Madagascar</a></li>
+                  <li><a class="dropdown-item" href="#">Malawi</a></li>
+                  <li><a class="dropdown-item" href="#">Malaysia</a></li>
+                  <li><a class="dropdown-item" href="#">Maldives</a></li>
+                  <li><a class="dropdown-item" href="#">Mali</a></li>
+                  <li><a class="dropdown-item" href="#">Malta</a></li>
+                  <li><a class="dropdown-item" href="#">Marshall Islands</a></li>
+                  <li><a class="dropdown-item" href="#">Mauritania</a></li>
+                  <li><a class="dropdown-item" href="#">Mauritius</a></li>
+                  <li><a class="dropdown-item" href="#">Mexico</a></li>
+                  <li><a class="dropdown-item" href="#">Micronesia</a></li>
+                  <li><a class="dropdown-item" href="#">Moldova</a></li>
+                  <li><a class="dropdown-item" href="#">Monaco</a></li>
+                  <li><a class="dropdown-item" href="#">Mongolia</a></li>
+                  <li><a class="dropdown-item" href="#">Montenegro</a></li>
+                  <li><a class="dropdown-item" href="#">Morocco</a></li>
+                  <li><a class="dropdown-item" href="#">Mozambique</a></li>
+                  <li><a class="dropdown-item" href="#">Myanmar</a></li>
+                  <li><a class="dropdown-item" href="#">Namibia</a></li>
+                  <li><a class="dropdown-item" href="#">Nauru</a></li>
+                  <li><a class="dropdown-item" href="#">Nepal</a></li>
+                  <li><a class="dropdown-item" href="#">Netherlands</a></li>
+                  <li><a class="dropdown-item" href="#">New Zealand</a></li>
+                  <li><a class="dropdown-item" href="#">Nicaragua</a></li>
+                  <li><a class="dropdown-item" href="#">Niger</a></li>
+                  <li><a class="dropdown-item" href="#">Nigeria</a></li>
+                  <li><a class="dropdown-item" href="#">North Korea</a></li>
+                  <li><a class="dropdown-item" href="#">North Macedonia</a></li>
+                  <li><a class="dropdown-item" href="#">Norway</a></li>
+                  <li><a class="dropdown-item" href="#">Oman</a></li>
+                  <li><a class="dropdown-item" href="#">Pakistan</a></li>
+                  <li><a class="dropdown-item" href="#">Palau</a></li>
+                  <li><a class="dropdown-item" href="#">Panama</a></li>
+                  <li><a class="dropdown-item" href="#">Papua New Guinea</a></li>
+                  <li><a class="dropdown-item" href="#">Paraguay</a></li>
+                  <li><a class="dropdown-item" href="#">Peru</a></li>
+                  <li><a class="dropdown-item" href="#">Philippines</a></li>
+                  <li><a class="dropdown-item" href="#">Poland</a></li>
+                  <li><a class="dropdown-item" href="#">Portugal</a></li>
+                  <li><a class="dropdown-item" href="#">Qatar</a></li>
+                  <li><a class="dropdown-item" href="#">Romania</a></li>
+                  <li><a class="dropdown-item" href="#">Russia</a></li>
+                  <li><a class="dropdown-item" href="#">Rwanda</a></li>
+                  <li><a class="dropdown-item" href="#">Saint Kitts & Nevis</a></li>
+                  <li><a class="dropdown-item" href="#">Saint Lucia</a></li>
+                  <li><a class="dropdown-item" href="#">Samoa</a></li>
+                  <li><a class="dropdown-item" href="#">San Marino</a></li>
+                  <li><a class="dropdown-item" href="#">Sao Tome & Principe</a></li>
+                  <li><a class="dropdown-item" href="#">Saudi Arabia</a></li>
+                  <li><a class="dropdown-item" href="#">Senegal</a></li>
+                  <li><a class="dropdown-item" href="#">Serbia</a></li>
+                  <li><a class="dropdown-item" href="#">Seychelles</a></li>
+                  <li><a class="dropdown-item" href="#">Sierra Leone</a></li>
+                  <li><a class="dropdown-item" href="#">Singapore</a></li>
+                  <li><a class="dropdown-item" href="#">Slovakia</a></li>
+                  <li><a class="dropdown-item" href="#">Slovenia</a></li>
+                  <li><a class="dropdown-item" href="#">Solomon Islands</a></li>
+                  <li><a class="dropdown-item" href="#">Somalia</a></li>
+                  <li><a class="dropdown-item" href="#">South Africa</a></li>
+                  <li><a class="dropdown-item" href="#">South Korea</a></li>
+                  <li><a class="dropdown-item" href="#">South Sudan</a></li>
+                  <li><a class="dropdown-item" href="#">Spain</a></li>
+                  <li><a class="dropdown-item" href="#">Sri Lanka</a></li>
+                  <li><a class="dropdown-item" href="#">St. Vincent & Grenadines</a></li>
+                  <li><a class="dropdown-item" href="#">State of Palestine</a></li>
+                  <li><a class="dropdown-item" href="#">Sudan</a></li>
+                  <li><a class="dropdown-item" href="#">Suriname</a></li>
+                  <li><a class="dropdown-item" href="#">Sweden</a></li>
+                  <li><a class="dropdown-item" href="#">Switzerland</a></li>
+                  <li><a class="dropdown-item" href="#">Syria</a></li>
+                  <li><a class="dropdown-item" href="#">Tajikistan</a></li>
+                  <li><a class="dropdown-item" href="#">Tanzania</a></li>
+                  <li><a class="dropdown-item" href="#">Thailand</a></li>
+                  <li><a class="dropdown-item" href="#">Timor-Leste</a></li>
+                  <li><a class="dropdown-item" href="#">Togo</a></li>
+                  <li><a class="dropdown-item" href="#">Tonga</a></li>
+                  <li><a class="dropdown-item" href="#">Trinidad and Tobago</a></li>
+                  <li><a class="dropdown-item" href="#">Tunisia</a></li>
+                  <li><a class="dropdown-item" href="#">Turkey</a></li>
+                  <li><a class="dropdown-item" href="#">Turkmenistan</a></li>
+                  <li><a class="dropdown-item" href="#">Tuvalu</a></li>
+                  <li><a class="dropdown-item" href="#">Uganda</a></li>
+                  <li><a class="dropdown-item" href="#">Ukraine</a></li>
+                  <li><a class="dropdown-item" href="#">United Arab Emirates</a></li>
+                  <li><a class="dropdown-item" href="#">United Kingdom</a></li>
+                  <li><a class="dropdown-item" href="#">United States</a></li>
+                  <li><a class="dropdown-item" href="#">Uruguay</a></li>
+                  <li><a class="dropdown-item" href="#">Uzbekistan</a></li>
+                  <li><a class="dropdown-item" href="#">Vanuatu</a></li>
+                  <li><a class="dropdown-item" href="#">Venezuela</a></li>
+                  <li><a class="dropdown-item" href="#">Vietnam</a></li>
+                  <li><a class="dropdown-item" href="#">Yemen</a></li>
+                  <li><a class="dropdown-item" href="#">Zambia</a></li>
+                  <li><a class="dropdown-item" href="#">Zimbabwe</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-danger" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container">
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        
+        <div class="bg-warning p-5 rounded-lg m-3">
+          <h1 class="display-4">current Time is: <span id="time"></span></h1>
+          <p class="lead">We have got you covered</p>
+          <hr class="my-4">
+          <p>We are here to show you the time for different countries</p>
+          <p>
+            </a>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              Browse Times
+            </button>
+          </p>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+              Here you can find the current time of your country.
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
